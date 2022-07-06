@@ -1,0 +1,28 @@
+title: Apriori J104
+author: Hsiang-Jen Li｜李享紝
+logo: _images/logo.png
+
+execute:
+  execute_notebooks: 'off'
+
+
+latex:
+  latex_documents:
+    targetname: book.tex
+
+bibtex_bibfiles:
+  - references.bib
+
+repository:
+  url: https://github.com/executablebooks/jupyter-book 
+  path_to_book: docs
+  branch: master
+
+html:
+  use_issues_button: true
+  use_repository_button: true
+  favicon: "_images/favicon.png"
+
+parse:
+  myst_enable_extensions:
+    - html_image

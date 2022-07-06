@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Lexend+Deca:wght@400;900&display=swap');
+
+body {
+  font-family: 'Noto Sans TC', 'Lexend Deca', sans-serif !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bolder;
+}
+
+.dataframe {
+    width: 100%;
+}
+
+div.cell_output tr, div.cell_output th, div.cell_output td {
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: black;
+    font-size: .5rem;
+    table-layout: fixed;
+    word-break: break-all;
+}
