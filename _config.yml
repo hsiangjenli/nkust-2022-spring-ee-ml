@@ -5,7 +5,6 @@ logo: _images/logo.png
 execute:
   execute_notebooks: 'off'
 
-
 latex:
   latex_documents:
     targetname: book.tex
@@ -23,6 +22,6 @@ html:
   use_repository_button: true
   favicon: "_images/favicon.png"
 
-parse:
-  myst_enable_extensions:
-    - html_image
+sphinx:
+  config:
+    html_extra_path: ['_html', 'J104/Images']

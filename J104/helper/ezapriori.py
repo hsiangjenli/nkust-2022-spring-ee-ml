@@ -44,15 +44,15 @@ class EZApriori:
     
     def _PlotNetwork(self, FROM, TO, WEIGHT, FNAME):
 
-        canvas = Network(height='100%', width='100%', bgcolor='#000', font_color='#fff')
+        canvas = Network(height='100%', width='100%', bgcolor='#fff', font_color='#3B3838')
 
         for e in zip(FROM, TO, WEIGHT):
             _from = e[0]
             _to = e[1]
             _w = e[2]
 
-            canvas.add_node(_from, _from, title=_from, color='#A23939', borderWidth=0, size=40)
-            canvas.add_node(_to, _to, title=_to, color='#A5A5A5', borderWidth=0, size=20)
+            canvas.add_node(_from, _from, title=_from, color='#C0AA7A', borderWidth=0, size=40)
+            canvas.add_node(_to, _to, title=_to, color='#F2F2F2', borderWidth=0, size=20)
             canvas.add_edge(_from, _to, value=_w)
 
         neighbor_map = canvas.get_adj_list()
