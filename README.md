@@ -1,5 +1,5 @@
 <div align='center'>
-    <img src='cover.png' width='50%' style='padding-bottom: 2rem'>
+    <img src='https://hsiangjenli.gitlab.io/apriori-j104/cover.png' width='50%' style='padding-bottom: 2rem'>
 
 # Apriori J104
 </div>
