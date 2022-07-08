@@ -1,1 +1,7 @@
-jupyter-book
+pandas
+numpy
+apyori
+pyvis
+bs4
+ckip-transformers
+jinja2==3.0.3

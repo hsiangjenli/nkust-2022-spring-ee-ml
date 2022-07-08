@@ -2,10 +2,18 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: J104/Intro
-chapters:
-- file: J104/01_抓資料
-- file: J104/02_斷詞
-- file: J104/03_整理資料_過濾詞性
-- file: J104/04_整理資料_格式
-- file: J104/05_Apriori
+root: README
+
+parts:
+  - caption: Introduction
+    chapters:
+      - file: J104/Intro
+      - file: J104/helper  
+
+  - caption: Jupyter Notebook
+    chapters:
+      - file: J104/01_抓資料
+      - file: J104/02_斷詞
+      - file: J104/03_整理資料_過濾詞性
+      - file: J104/04_整理資料_格式
+      - file: J104/05_Apriori

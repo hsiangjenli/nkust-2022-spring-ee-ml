@@ -11,7 +11,7 @@ class Job104:
 
     KEYWORD: String
     MAX_PAGES: int
-    MUST_INCLUDE: List = None
+    MUST_INCLUDE: List = False
 
     def Crawler(self):
 
@@ -53,7 +53,10 @@ class Job104:
         url_Format = 'https://{href}'
         for a in list_JobLinks:
             if 'relevance' in a['href']:
-                if any(must_include in a.text for must_include in self.MUST_INCLUDE):
+                if self.MUST_INCLUDE:
+                    if any(must_include in a.text for must_include in self.MUST_INCLUDE):
+                        list_FilteredJobLinks.append(url_Format.format(href=a['href'].strip('/')))
+                else:
                     list_FilteredJobLinks.append(url_Format.format(href=a['href'].strip('/')))
         return list_FilteredJobLinks
 

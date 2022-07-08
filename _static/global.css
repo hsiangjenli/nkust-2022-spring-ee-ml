@@ -23,3 +23,7 @@ div.cell_output tr, div.cell_output th, div.cell_output td {
     table-layout: fixed;
     word-break: break-all;
 }
+
+.icon {
+    color: #676767;
+}
