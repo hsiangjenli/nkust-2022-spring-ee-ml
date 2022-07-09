@@ -57,7 +57,6 @@ class EZApriori:
 
         neighbor_map = canvas.get_adj_list()
 
-        
         for node in canvas.nodes:
             node['title'] += ' → ' + ' '.join(neighbor_map[node['id']])
             
